@@ -64,7 +64,7 @@ print "\n"
 print df['organisatie'].value_counts()[:40]
 print "\n"
 
-# merge with original dataset again (from which we removed <= 3500 and party/political positions)
+# merge with original dataset again (from which we removed < 3500 and party/political positions)
 df = df.combine_first(df2)
 
 # output to csv
