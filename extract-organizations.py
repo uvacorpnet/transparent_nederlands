@@ -52,6 +52,14 @@ df['organisatie'] = df['waarde'].str.replace('(\S*(' + typeregex + ')\S*)', '', 
 df['organisatie'] = df['organisatie'].str.lstrip(string.lowercase + ' ,().') 
 df['organisatie'] = df['organisatie'].str.replace('(\(|\)|\'|\"|\.|\-|\/)', ' ')
 df['organisatie'] = df['organisatie'].str.replace('  ', ' ')
+
+# remove everything after the comma
+def delete_after_comma(x):
+    ind = x.find(",")
+    if ind > 0:
+        return x[:x.find(",")]
+    else: return x
+df["organisatie"] = df["organisatie"].apply(lambda x: delete_after_comma(x))
 df['organisatie'] = df['organisatie'].str.strip()
 
 # type is whatever remains after removing the previously extracted organization
