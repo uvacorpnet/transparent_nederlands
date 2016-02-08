@@ -12,7 +12,7 @@ from unidecode import unidecode
 
 # some custom "dictionaries"
 positions = [
-' lid', '^lid', 'vicevoorzitter',  'vice voorzitter', 'vicepresident', 'plaatsvervangend voorzitter', 'algemeen voorzitter', 'voorzitter', 'columnist', 'permanent vertegenwoordiger', 'secretaris', 'bedrijfs economisch medewerker', 'wetenschappelijk medewerker', 'medewerker', 'medewerkster', 'penningmeester'
+' lid', '^lid', 'vicevoorzitter',  'vice voorzitter', 'vicepresident', 'plaatsvervangend voorzitter', 'algemeen voorzitter', 'voorzitter', 'columnist', 'permanent vertegenwoordiger', 'secretaris', 'bedrijfs economisch medewerker', 'wetenschappelijk medewerker', 'medewerker', 'medewerkster', 'penningmeester', 
 'vertegenwoordiger', 'medewerker', 'concern directeur', 'directeur', 'senior adviseur', 'organisatie adviseur', 'intern adviseur',  'adviseur', 'eindredacteur', 'gastdocent', 'fellow', 'manager', 'officier'
 ]
 bodies = [
